@@ -1,0 +1,36 @@
+{
+  "name": "UserMan",
+  "version": "1.0.0",
+  "description": "User management system",
+  "main": "app/index.html",
+  "window": {
+    "toolbar": true,
+    "frame": true,
+    "width": 950,
+    "height": 560,
+    "position": "center",
+    "min_width": 950,
+    "min_height": 560
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Test"
+  ],
+  "author": "Satit Rianpit",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jade": "^0.10.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-watch": "^2.0.0"
+  },
+  "dependencies": {
+    "MD5": "^1.2.1",
+    "knex": "^0.7.3",
+    "lodash": "^2.4.1",
+    "moment": "^2.8.4",
+    "mysql": "^2.5.3"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "UserMan",
+  "version": "1.0.0",
+  "authors": [
+    "Satit Rianpit <siteslave@msn.com>"
+  ],
+  "description": "User management system",
+  "keywords": [
+    "User",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.5",
+    "angular-route": "~1.3.5",
+    "bootstrap": "~3.3.1",
+    "font-awesome": "~4.2.0"
+  }
+}

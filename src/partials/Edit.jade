@@ -1,0 +1,12 @@
+ol.breadcrumb
+    li
+        a(href="#/") หน้าหลัก
+    li.active แก้ไขข้อมูล
+
+form(role="form", name="frmRegister").form-horizontal
+    label ชื่อ - สกุล
+    input(type="text", ng-model="fullname", ng-required="true").form-control
+    br
+    button(type="button", ng-click="saveUpdate()" ng-disabled="frmRegister.$invalid").btn.btn-success
+        i.fa.fa-save
+        | &nbsp; บันทึกข้อมูล

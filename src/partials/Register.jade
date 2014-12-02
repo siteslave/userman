@@ -1,0 +1,16 @@
+ol.breadcrumb
+    li
+        a(href="#/") หน้าหลัก
+    li.active เพิ่มผู้ใช้งาน
+
+form(role="form", name="frmRegister").form-horizontal
+    label ชื่อผู้ใช้งาน
+    input(type="text", ng-model="username", ng-required="true").form-control
+    label รหัสผ่าน
+    input(type="password", ng-model="password", ng-required="true").form-control
+    label ชื่อ - สกุล
+    input(type="text", ng-model="fullname", ng-required="true").form-control
+    br
+    button(type="button", ng-click="saveRegister()" ng-disabled="frmRegister.$invalid").btn.btn-success
+        i.fa.fa-save
+        | &nbsp; บันทึกข้อมูล

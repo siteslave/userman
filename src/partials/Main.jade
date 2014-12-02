@@ -1,0 +1,21 @@
+ol.breadcrumb
+    li.active หน้าหลัก
+
+table.table.table-striped
+    thead
+        tr
+            th #
+            th ชื่อผู้ใช้งาน
+            th ชื่อ - สกุล
+            th &nbsp;
+    tbody
+        tr(ng-repeat="u in users")
+            td.text-center {{$index+1}}
+            td.text-center {{u.username}}
+            td {{u.fullname}}
+            td
+                .btn-group
+                    a(href="#/edit/{{u.id}}").btn.btn-default
+                        i.fa.fa-edit
+                    button(type="button", ng-click="doRemove(u.id)").btn.btn-danger
+                        i.fa.fa-remove

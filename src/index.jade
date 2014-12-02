@@ -1,0 +1,23 @@
+extends layouts/main
+
+block scripts
+    script(src="User.js")
+    script(src="MainController.js")
+    script(src="MainService.js")
+    script(src="EditController.js")
+    script(src="EditService.js")
+    script(src="RegisterController.js")
+    script(src="RegisterService.js")
+
+block content
+
+    .row(ng-app="app.User")
+        .col-md-4.col-lg-4.col-sm-4
+            .list-group
+                a(href="#/").list-group-item.active
+                    i.fa.fa-home
+                    | &nbsp;หน้าหลัก
+                a(href="#/register").list-group-item
+                    i.fa.fa-plus-circle
+                    | &nbsp;เพิ่มผู้ใช้งาน
+        .col-md-8.col-lg-8.col-sm-8(ng-view)
